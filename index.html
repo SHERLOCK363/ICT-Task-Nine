@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Effect</title>
+    <script>
+        window.onload = function() {
+            const img = document.createElement('img');
+            img.src = "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg"; // Image link
+            img.alt = "Peacock Feather";
+            img.id = "myImage";
+
+            // Set initial style for the image
+            img.style.display = 'block'; // Ensure the image is displayed
+            document.body.appendChild(img);
+
+            // Add mouseover event
+            img.addEventListener('mouseover', function() {
+                img.style.display = 'none'; // Hide the image
+            });
+
+            // Add mouseout event
+            img.addEventListener('mouseout', function() {
+                img.style.display = 'block'; // Show the image
+            });
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
